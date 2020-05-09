@@ -6,5 +6,4 @@
  * @license   [[LICENSE_URL]] ([[LICENSE]])
  *------------------------------------------------------------- *)
 
-{---put your main dependencies registration here---}
-container.add('mailer', TSendmailMailerFactory.create());
+router.get('/', container.get('homeController') as IRequestHandler);
